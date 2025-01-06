@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { assets } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../Context/AppContext';
@@ -37,6 +37,7 @@ const Login = () => {
       }
     } catch (error) {
       toast.error(error.message);
+      console.log(error)
     }
   };
 
