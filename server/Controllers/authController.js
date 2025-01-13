@@ -140,7 +140,6 @@ export const verfiyEmail = async(req, res) => {
     //check if the user is authenticated
 export const isAuthenticated = async(req, res) => {
     try {
-
         return res.json({ success: true, message: "User is authenticated!" })
     } catch (error) {
         return res.json({ success: false, message: error.message })
